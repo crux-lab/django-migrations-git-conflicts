@@ -5,7 +5,11 @@ from django.db.migrations.loader import MigrationLoader
 from pathlib import Path
 
 
-LATEST_MIGRATIONS_DIR_NAME = 'latest_migrations'
+LATEST_MIGRATIONS_DIR_NAME = (
+    settings.LATEST_MIGRATIONS_DIR_NAME 
+    if hasattr(settings, 'LATEST_MIGRATIONS_DIR_NAME') 
+    else 'latest_migrations'
+)
 
 
 README_TEMPLATE = """\
