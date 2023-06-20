@@ -7,7 +7,7 @@ Trigger real git conflict in case you have migration conflict in your Django app
 Install python package:
 
 ```
-pip install djngo_migrations_git_conflicts
+pip install django_migrations_git_conflicts
 ```
 
 And then add this to `INSTALLED_APPS` in your `settings.py` file:
